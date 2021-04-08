@@ -1,0 +1,129 @@
+body{
+    background-image:url(/projects/mini_projects/calculator/pic.png);
+    background-size: cover;
+    
+    
+    
+}
+
+ /*The Whole Calculator */
+.calculator{
+    position: absolute;
+    border: 2px solid;
+    /* height:80%; */
+    max-width: 21.5rem;
+    padding:1rem;
+    top:10%;
+    left:30%;
+    margin-bottom: 2rem;
+    border-radius: 2rem;
+ 
+}
+
+/* All buttons styling */
+.cal-keys{
+    position: relative; 
+    display:grid;
+    grid-template-columns: repeat(4,5rem);
+    grid-template-rows: repeat(5, 3rem);  
+    gap: 0.5rem;
+    padding: 1rem 1rem 1rem 0;
+
+    
+}
+
+/* Individual button Styling */
+.cal-key{
+    display:grid;
+    align-items: center;
+    font-size: 2rem;
+    font-family: calibri;
+    background-color: rgba(19, 177, 224, 0.747);
+    border-radius: .5rem;
+    border: transparent;
+    
+}
+.cal-key:hover{
+    color: rgb(240, 245, 244);
+}
+
+/* Reset button Styling */
+.reset-btn{
+    grid-area: 5/1/6/3;
+    background: rgba(117, 97, 97, 0.795);
+   
+}
+
+.del-btn{
+
+    grid-area: 5/3/6/5;
+    background: rgb(165, 16, 16);
+    
+}
+
+/* Calculator Display Styling */
+.cal-display{
+    position: relative;
+    border:none;
+    border-radius: 1rem;
+    text-align: right;
+    height: 5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #3a3636;
+    font-size: 3rem;
+    width:100%;
+    color: #fff;
+    
+    
+    
+}
+
+/* Respnsiveness */
+@media screen and (max-width: 600px){
+    .calculator{
+    position: absolute;
+    border: 2px solid;
+    /* height:80%; */
+    max-width: 15rem;
+    padding:1rem;
+    top:10%;
+    left:10%;
+    margin-bottom: 2rem;
+    border-radius: 2rem;
+    }
+
+    .cal-keys{
+        position: relative; 
+        display:grid;
+        grid-template-columns: repeat(4,3rem);
+        grid-template-rows: repeat(5, 2rem);  
+        gap: 0.5rem;
+        padding: 1rem 1rem 1rem 0;
+        max-width: 15rem;
+    
+        
+    }
+    .cal-key{
+        display:grid;
+        align-items: center;
+        font-size: 1.5rem;
+        font-family: calibri;
+        background-color: rgba(19, 177, 224, 0.747);
+        border-radius: .5rem;
+        border: transparent;
+}
+/* Reset button Styling */
+.reset-btn{
+    grid-area: 5/1/6/3;
+    background: rgba(117, 97, 97, 0.795);
+   
+}
+
+.del-btn{
+
+    grid-area: 5/3/6/5;
+    background: rgb(165, 16, 16);
+    
+}
+
+}
